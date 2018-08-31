@@ -1,8 +1,10 @@
-class L 
+class L
 {
-	public static void main(final String[] args)				//main method argu String[]arg declared final,not modifying args but args[0]
+	static final int MAX_REDUCTION = 10;
+	final static String COUNTRY_NAME = "India";
+	public static void main(String[] args) 
 	{
-		args[0] = "hello";										//RTE, Exception
-		System.out.println("done");
+		System.out.println(MAX_REDUCTION);
+		System.out.println(COUNTRY_NAME);
 	}
 }

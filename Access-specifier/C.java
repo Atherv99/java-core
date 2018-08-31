@@ -1,16 +1,9 @@
 class C 
 {
-	public static void main(String[] args) 
+	static final int i = 10;
+
+	void test()
 	{
-		final int i = 10;
-		int j = i;							// i is used again.
-		
-		System.out.println(i);
-		System.out.println(j);
-		
-		j = (i + 10);
-		
-		System.out.println(i);
-		System.out.println(j);
+		i = 10;					//CTE,attempting to reinitialize globla static
 	}
 }

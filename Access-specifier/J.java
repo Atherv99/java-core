@@ -1,9 +1,11 @@
-class J 
+class J											//convention not syntax rule
 {
+	static final int CON = 10;
+	static final String DRIVER = "some driver";
+
 	public static void main(String[] args) 
 	{
-		final String[] y = new String[3];
-		y = new String[3];					//CTE, no matter value is getting changed or not attempt throws CTE.
-		System.out.println("done");
+		System.out.println(CON);
+		System.out.println(DRIVER);
 	}
 }

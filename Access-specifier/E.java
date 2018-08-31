@@ -1,9 +1,9 @@
 class E 
 {
-	public static void main(String[] args) 
+	static final int i;
+	
+	static					//thru SIB can initialize global final static
 	{
-		final E e1 = new E();
-		e1 = null;								//CTE
-		System.out.println("done");
+		i = 10;				//compilation is successful.
 	}
 }

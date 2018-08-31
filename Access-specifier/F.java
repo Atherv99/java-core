@@ -1,10 +1,8 @@
-class F 
+class F
 {
-	public static void main(String[] args) 
+	static final int i = 10;
+	static
 	{
-		F f1 = new F();
-		final F f2 = new F();
-		f2 = f1;					
-		System.out.println("done");
+		i = 10;					//CTE, attempting to reinitialize final global static 
 	}
 }

@@ -1,8 +1,6 @@
-class S 
+abstract class S
 {
-	final int x = 10;
-
-	{
-		x = 10;				//CTE, final i is getting modified in IIB body.
-	}
+	abstract static void test();
 }
+
+//static methods can't be abstract, as they can't be developed further. static is concrete,one time development

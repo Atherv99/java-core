@@ -1,10 +1,11 @@
-class O 
+interface O
 {
-	final int i = 10;
-	public static void main(String[] args) 
-	{
-		O o1 = new O();
-		o1.i = 10;								//CTE, final i is getting modified.
-		System.out.println(o1.i);
-	}
-}
+	int I = 10;
+	static int J = 10;
+	public static int K = 10;
+	public final static int L = 10;
+	public static final int M = 10;
+	static public final int X = 10;
+} 
+
+//every attribute of interface is public,final,static

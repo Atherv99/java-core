@@ -1,9 +1,5 @@
-class W 
+abstract final class W
 {
-	final int i = 0;
+} 
 
-	W()
-	{
-		i = 0;
-	}
-}
+//abstract class should have subclass,final shouldn't have subclass

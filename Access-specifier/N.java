@@ -1,12 +1,6 @@
-class N 
+interface N
 {
-	final int i = 10;
-	public static void main(String[] args) 
-	{
-		N n1 = new N();
-		n1 = new N();
-		System.out.println("done");
-	}
-}
+	int i;
+} 
 
-//i is final not modified anywhere, n1 is getting modified.
+//i = public,static & final. it should be initialized can't survive with default value.

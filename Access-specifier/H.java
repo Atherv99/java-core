@@ -1,10 +1,25 @@
-class H
+class H 
 {
-	public static void main(String[] args) 
+	final int i;								//not static global final,it is final to 1 object for other may be same or may not be, obj wise its constant
+
+	H()
 	{
-		final int[] x = new int[2];				//x is final, x[0],x[1] is modified not x.
-		x[0] = 100;
-		x[1] = 200;
-		System.out.println("done");
+		i = 10;
+	}
+
+	H(double j)
+	{
+		i = 20;
+	}
+
+	public static void main(String[] args)
+	{
+		H h1 = new H();
+		H h2 = new H(90.90);
+
+		System.out.println(h1.i);
+		System.out.println(h2.i);
 	}
 }
+
+//i is constant for particular object. Thru execution wise it is different,later it cant be modified.

@@ -1,5 +1,4 @@
-class T 
+interface T						//interface methods can't be declared are statics
 {
-	final int i;					//CTE,final GV cannot be survived with default value in default constructor.
-									//	final int i = 10;
-}
+	static void test1();
+} 

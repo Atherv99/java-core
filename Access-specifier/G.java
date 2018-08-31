@@ -1,9 +1,14 @@
 class G 
 {
-	public static void main(String[] args) 
+	static final int i;
+
+	static 
 	{
-		final String s1 = "abc";
-		s1 = "abc";
-		System.out.println("done");
+		i = 10;
+	}
+
+	static 
+	{
+		i = 10;				//CTE,attempting to reinitialize static global final i
 	}
 }

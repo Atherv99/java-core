@@ -1,11 +1,11 @@
 class B 
 {
+	final static int i = 10;
+
 	public static void main(String[] args) 
 	{
-		final int i;
-		i = 10;
 		System.out.println(i);
-		//i = 10;									//CTE, attempting to reinitialize will throw error
+		i = 10;								//CTE, final static i cannot be modified.
 		System.out.println(i);
 	}
 }

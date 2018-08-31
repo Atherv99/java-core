@@ -1,11 +1,9 @@
 class K 
 {
-	public static void test(int i, final int j)					//arguments of method can be final,argu are automatically initializing thru calling stmt
+	public static void main(String[] args) 
 	{
-		i = 10;													//non final
-		j = 10;													//final variable, CTE
-
-		System.out.println(i);
-		System.out.println(j);
+		System.out.println(Thread.MIN_PRIORITY);
+		System.out.println(Thread.NORM_PRIORITY);
+		System.out.println(Thread.MAX_PRIORITY);
 	}
 }
