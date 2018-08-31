@@ -1,15 +1,20 @@
-abstract class N 
+class N 
 {
-	abstract void test();
-	abstract void test(int i);
-	abstract void test(double i);
+	public static void main(String[] args) 
 	{
+		System.out.println("from N");
 	}
-	int test(int i,int j)
+
+	static
 	{
-		return i;
+		System.out.println("SIB-N");
 	}
-	protected void test(char c1)
+}
+
+class O extends N									//though there is no main method the ctrl will go to superclass.
+{													//before O is loaded it chks if main method is or not as its not there goes to superclass then superclass is loaded then subclass is loaded.
+	static
 	{
+		System.out.println("SIB-O");
 	}
 }
