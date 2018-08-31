@@ -1,19 +1,24 @@
-class A 
+class A
 {
-	int i;
-}
-
-	class B extends A    //class A is super/base/parent/general class and class B is sub/child/special/ class
+	A(int i)
 	{
-	   int j;
-	   public static void main(String[] args) 
-	{
-		B b1=new B();
-		System.out.println(b1.i);  
-		System.out.println(b1.j);
+	  System.out.println("A(int)");
 	}
 }
 
+Class B extends A
+{
+	B()
+	{
+		System.out.pritnln("B()");
+	
+	}
+	public static void main(String[] args)
+	{
+	
+	A a1=new A(90);
+	System.out.println("--------");
+	B b1 =new B();
+	}
 
-// every member is inhriting to B
-// inside B clss 2 non static members are loadind while cretin the object
+}
