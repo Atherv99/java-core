@@ -1,34 +1,23 @@
-abstract class H
+class E
 {
-	abstract void test1();
-	abstract void test2();
-	abstract void test3();
 }
-
+class F extends E
+{
+}
+class G extends F
+{
+}
+class H
+{
+	F test()
+	{
+		return null;
+	}
+}
 class I extends H
 {
-	void test1()
+	G test()
 	{
-		System.out.println("from test1");
-	}
-
-	void test2()
-	{
-		System.out.println("from test2");
-	}
-	
-	void test3()
-	{
-		System.out.println("from test3");
-	}
-	
-	public static void main(String[] args) 
-	{
-		//H obj1 = new H();
-		I obj2 = new I();
-		obj2.test1();
-		obj2.test2();
-		obj2.test3();
-		System.out.println("done");
+		return null;
 	}
 }

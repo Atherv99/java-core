@@ -1,9 +1,11 @@
-abstract class B 
+abstract class A
 {
-	abstract void test1();
-	abstract void test2();
-	abstract void test3();
-	abstract void test4();
+	abstract int test()
+	
 }
-
-//abstract class can have any number of abstract method.
+class B extends A
+{
+	void test()
+	{
+	}
+}
