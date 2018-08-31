@@ -1,26 +1,19 @@
-//In Inheritance properties one class is inherited into another to create class for better re usability of code and easy enhancement
-package Inheritance;
-
-class A
+class A 
 {
-	public void test1()
-	{
-	System.out.println("Inside Test1")	;
-	}
-	public void test()
-	{
-	System.out.println("Inside Test2");	
-	}
+	int i;
 }
-public class B extends A {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Inside Main B");
+	class B extends A    //class A is super/base/parent/general class and class B is sub/child/special/ class
+	{
+	   int j;
+	   public static void main(String[] args) 
+	{
 		B b1=new B();
-		b1.test();
-		b1.test1();
-
+		System.out.println(b1.i);  
+		System.out.println(b1.j);
 	}
-
 }
+
+
+// every member is inhriting to B
+// inside B clss 2 non static members are loadind while cretin the object
