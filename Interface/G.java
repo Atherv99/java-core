@@ -1,10 +1,46 @@
-interface G
+interface D
 {
-	public abstract void test1();
-	public abstract void test2();
+	void test1();
 }
 
-/*
-G is a abstract interface.only methods is public not G interface.
-every method of interface is public and abstract by default.
-*/
+interface E
+{
+	void test2();
+}
+
+interface F
+{
+	void test3();
+}
+
+class G implements D,E,F
+{
+	public void test1()
+	{
+	System.out.println("from test1");
+
+	}
+
+	public void test2()
+	{
+	System.out.println("from test2");
+
+	}
+
+	public void test3()
+	{
+	System.out.println("from test3");
+
+	}
+
+	public static void main(String[] args)
+	{
+	
+	G g1=new G();
+	g1.test1();
+	g1.test2();
+	g1.test3();
+
+	System.out.println("done");
+	}
+}

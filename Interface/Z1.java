@@ -1,31 +1,45 @@
-interface K
+interface X
 {
 void test1();
 }
 
-interface L extends K
+interface Y
 {
 void test2();
 }
- class M implements L
+ 
+ 
+ class Z
  {
+ void test3()	{
+ System.out.println("from test3");
+ }
+ }
+  
+  class Z1 extends Z implements X,Y
+  {
   public void test1()
   {
   System.out.println("from test1");
   }
 
+
   public void test2()
   {
   System.out.println("from test2");
   }
+
+
+
 public static void main(String[] args)
 {
 
-M a=new M();
+Z1 a=new Z1();
 a.test1();
 
 a.test2();
 
+a.test3();
 
 System.out.println("from");
 
