@@ -1,0 +1,23 @@
+class F
+
+  {
+   
+   static 
+      {
+      
+        i=1;   //this is local ,so here we r not using i value but we r providing value of i
+      
+      }
+	
+	static int i=2;   //this is global
+
+     public static void main(String[] args)
+      {
+      
+         System.out.println(i);
+      
+
+      }
+
+  
+  }

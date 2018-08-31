@@ -1,0 +1,18 @@
+class A 
+   {
+      static 
+      {
+       System.out.println("SIB");
+      
+      }
+
+      public static void main(Stirng[] args)
+      {
+      
+      System.out.println("main");
+      
+
+      }
+
+
+  }
