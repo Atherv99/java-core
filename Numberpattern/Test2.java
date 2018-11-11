@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Numberpattern;
+import java.util.*;
+/**
+ *
+ * @author Ashwani Kumar
+ */
+public class Test2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Enter the size of pattern");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int k=0;
+        for(int i=n;i>0;i--)
+        {
+         for(int j=n;j>0;j--)
+         {
+             if(j>i-1)
+             {
+             System.out.print(j);
+             
+             }
+             else
+             {
+              System.out.print(i);
+             }
+         }
+         System.out.println();
+        }
+    }
+    
+}
